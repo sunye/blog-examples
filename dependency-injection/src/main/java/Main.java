@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ApplicationContext ctx = new AnnotationConfigApplicationContext(MyClassConfiguration.class);
+        ApplicationContext ctx = new AnnotationConfigApplicationContext(MyConfiguration.class);
         MyClass mine = ctx.getBean(MyClass.class);
 
         mine.getTags().add("spring");
