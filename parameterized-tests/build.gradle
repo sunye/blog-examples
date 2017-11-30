@@ -1,0 +1,19 @@
+group 'fr.nantes.junit'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+compileJava.options.encoding = 'UTF-8'
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'commons-validator:commons-validator:1.4.0'
+    testCompile group: 'junit', name: 'junit', version: '5'
+}
+
